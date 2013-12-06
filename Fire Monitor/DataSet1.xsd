@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sensors" msprop:Generator_UserTableName="sensors" msprop:Generator_RowDeletedName="sensorsRowDeleted" msprop:Generator_RowChangedName="sensorsRowChanged" msprop:Generator_RowClassName="sensorsRow" msprop:Generator_RowChangingName="sensorsRowChanging" msprop:Generator_RowEvArgName="sensorsRowChangeEvent" msprop:Generator_RowEvHandlerName="sensorsRowChangeEventHandler" msprop:Generator_TableClassName="sensorsDataTable" msprop:Generator_TableVarName="tablesensors" msprop:Generator_RowDeletingName="sensorsRowDeleting" msprop:Generator_TablePropName="sensors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pin" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="pin" msprop:nullValue="1" msprop:Generator_ColumnVarNameInTable="columnpin" msprop:Generator_ColumnPropNameInTable="pinColumn" msprop:Generator_ColumnPropNameInRow="pin" type="xs:int" />
+              <xs:element name="type" msprop:Generator_UserColumnName="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" type="xs:int" />
+              <xs:element name="descr" msprop:Generator_UserColumnName="descr" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="descr" msprop:Generator_ColumnPropNameInTable="descrColumn" msprop:Generator_ColumnVarNameInTable="columndescr" type="xs:string" default="&quot;&quot;" minOccurs="0" />
+              <xs:element name="warn" msprop:Generator_UserColumnName="warn" msprop:Generator_ColumnVarNameInTable="columnwarn" msprop:Generator_ColumnPropNameInRow="warn" msprop:Generator_ColumnPropNameInTable="warnColumn" type="xs:double" default="80" />
+              <xs:element name="alarm" msprop:Generator_UserColumnName="alarm" msprop:Generator_ColumnVarNameInTable="columnalarm" msprop:Generator_ColumnPropNameInRow="alarm" msprop:Generator_ColumnPropNameInTable="alarmColumn" type="xs:double" default="90" />
+              <xs:element name="color" msprop:Generator_UserColumnName="color" msprop:Generator_ColumnVarNameInTable="columncolor" msprop:Generator_ColumnPropNameInRow="color" msprop:Generator_ColumnPropNameInTable="colorColumn" type="xs:string" default="#000000" />
+              <xs:element name="tray" msprop:Generator_UserColumnName="tray" msprop:Generator_ColumnVarNameInTable="columntray" msprop:Generator_ColumnPropNameInRow="tray" msprop:Generator_ColumnPropNameInTable="trayColumn" type="xs:boolean" default="false" />
+              <xs:element name="cdef" msprop:Generator_UserColumnName="cdef" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columncdef" msprop:Generator_ColumnPropNameInTable="cdefColumn" msprop:Generator_ColumnPropNameInRow="cdef" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="graphing" msprop:Generator_UserColumnName="graphing" msprop:Generator_ColumnPropNameInRow="graphing" msprop:Generator_ColumnVarNameInTable="columngraphing" msprop:Generator_ColumnPropNameInTable="graphingColumn" type="xs:boolean" default="true" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="settings" msprop:Generator_UserTableName="settings" msprop:Generator_RowDeletedName="settingsRowDeleted" msprop:Generator_RowChangedName="settingsRowChanged" msprop:Generator_RowClassName="settingsRow" msprop:Generator_RowChangingName="settingsRowChanging" msprop:Generator_RowEvArgName="settingsRowChangeEvent" msprop:Generator_RowEvHandlerName="settingsRowChangeEventHandler" msprop:Generator_TableClassName="settingsDataTable" msprop:Generator_TableVarName="tablesettings" msprop:Generator_RowDeletingName="settingsRowDeleting" msprop:Generator_TablePropName="settings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ip" msprop:Generator_UserColumnName="ip" msprop:Generator_ColumnVarNameInTable="columnip" msprop:Generator_ColumnPropNameInRow="ip" msprop:Generator_ColumnPropNameInTable="ipColumn" type="xs:string" default="172.16.100.2" />
+              <xs:element name="community" msprop:Generator_UserColumnName="community" msprop:Generator_ColumnVarNameInTable="columncommunity" msprop:Generator_ColumnPropNameInRow="community" msprop:Generator_ColumnPropNameInTable="communityColumn" type="xs:string" default="00000000000" />
+              <xs:element name="timeout" msprop:Generator_UserColumnName="timeout" msprop:Generator_ColumnVarNameInTable="columntimeout" msprop:Generator_ColumnPropNameInRow="timeout" msprop:Generator_ColumnPropNameInTable="timeoutColumn" type="xs:int" default="200" />
+              <xs:element name="retry" msprop:Generator_UserColumnName="retry" msprop:Generator_ColumnVarNameInTable="columnretry" msprop:Generator_ColumnPropNameInRow="retry" msprop:Generator_ColumnPropNameInTable="retryColumn" type="xs:int" default="2" />
+              <xs:element name="hist" msprop:Generator_UserColumnName="hist" msprop:Generator_ColumnVarNameInTable="columnhist" msprop:Generator_ColumnPropNameInRow="hist" msprop:Generator_ColumnPropNameInTable="histColumn" type="xs:int" default="5" />
+              <xs:element name="popups" msprop:Generator_UserColumnName="popups" msprop:Generator_ColumnVarNameInTable="columnpopups" msprop:Generator_ColumnPropNameInRow="popups" msprop:Generator_ColumnPropNameInTable="popupsColumn" type="xs:boolean" default="true" />
+              <xs:element name="sounds" msprop:Generator_UserColumnName="sounds" msprop:Generator_ColumnVarNameInTable="columnsounds" msprop:Generator_ColumnPropNameInRow="sounds" msprop:Generator_ColumnPropNameInTable="soundsColumn" type="xs:boolean" default="true" />
+              <xs:element name="first_run" msprop:Generator_UserColumnName="first_run" msprop:Generator_ColumnVarNameInTable="columnfirst_run" msprop:Generator_ColumnPropNameInRow="first_run" msprop:Generator_ColumnPropNameInTable="first_runColumn" type="xs:boolean" default="true" />
+              <xs:element name="rigid_graph" msprop:Generator_UserColumnName="rigid_graph" msprop:Generator_ColumnVarNameInTable="columnrigid_graph" msprop:Generator_ColumnPropNameInRow="rigid_graph" msprop:Generator_ColumnPropNameInTable="rigid_graphColumn" type="xs:boolean" default="false" />
+              <xs:element name="upper_limit" msprop:Generator_UserColumnName="upper_limit" msprop:Generator_ColumnPropNameInRow="upper_limit" msprop:Generator_ColumnVarNameInTable="columnupper_limit" msprop:Generator_ColumnPropNameInTable="upper_limitColumn" type="xs:double" default="120" />
+              <xs:element name="lower_limit" msprop:Generator_UserColumnName="lower_limit" msprop:Generator_ColumnPropNameInRow="lower_limit" msprop:Generator_ColumnVarNameInTable="columnlower_limit" msprop:Generator_ColumnPropNameInTable="lower_limitColumn" type="xs:double" default="0" />
+              <xs:element name="line_width" msprop:Generator_UserColumnName="line_width" msprop:Generator_ColumnVarNameInTable="columnline_width" msprop:Generator_ColumnPropNameInRow="line_width" msprop:Generator_ColumnPropNameInTable="line_widthColumn" type="xs:short" default="2" />
+              <xs:element name="line_area" msprop:Generator_UserColumnName="line_area" msprop:Generator_ColumnVarNameInTable="columnline_area" msprop:Generator_ColumnPropNameInRow="line_area" msprop:Generator_ColumnPropNameInTable="line_areaColumn" type="xs:short" default="10" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sensor_types" msprop:Generator_UserTableName="sensor_types" msprop:Generator_RowDeletedName="sensor_typesRowDeleted" msprop:Generator_RowChangedName="sensor_typesRowChanged" msprop:Generator_RowClassName="sensor_typesRow" msprop:Generator_RowChangingName="sensor_typesRowChanging" msprop:Generator_RowEvArgName="sensor_typesRowChangeEvent" msprop:Generator_RowEvHandlerName="sensor_typesRowChangeEventHandler" msprop:Generator_TableClassName="sensor_typesDataTable" msprop:Generator_TableVarName="tablesensor_types" msprop:Generator_RowDeletingName="sensor_typesRowDeleting" msprop:Generator_TablePropName="sensor_types">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type_id" msprop:Generator_UserColumnName="type_id" msprop:Generator_ColumnVarNameInTable="columntype_id" msprop:Generator_ColumnPropNameInRow="type_id" msprop:Generator_ColumnPropNameInTable="type_idColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="descr" msprop:Generator_UserColumnName="descr" msprop:Generator_ColumnVarNameInTable="columndescr" msprop:Generator_ColumnPropNameInRow="descr" msprop:Generator_ColumnPropNameInTable="descrColumn" type="xs:string" default="&quot;&quot;" minOccurs="0" />
+              <xs:element name="cdef" msprop:Generator_UserColumnName="cdef" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columncdef" msprop:Generator_ColumnPropNameInTable="cdefColumn" msprop:Generator_ColumnPropNameInRow="cdef" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="symbol" msprop:Generator_UserColumnName="symbol" msprop:Generator_ColumnVarNameInTable="columnsymbol" msprop:Generator_ColumnPropNameInRow="symbol" msprop:Generator_ColumnPropNameInTable="symbolColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="icon" msprop:Generator_UserColumnName="icon" msprop:Generator_ColumnVarNameInTable="columnicon" msprop:Generator_ColumnPropNameInRow="icon" msprop:Generator_ColumnPropNameInTable="iconColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tmp_data" msprop:Generator_UserTableName="tmp_data" msprop:Generator_RowDeletedName="tmp_dataRowDeleted" msprop:Generator_RowChangedName="tmp_dataRowChanged" msprop:Generator_RowClassName="tmp_dataRow" msprop:Generator_RowChangingName="tmp_dataRowChanging" msprop:Generator_RowEvArgName="tmp_dataRowChangeEvent" msprop:Generator_RowEvHandlerName="tmp_dataRowChangeEventHandler" msprop:Generator_TableClassName="tmp_dataDataTable" msprop:Generator_TableVarName="tabletmp_data" msprop:Generator_RowDeletingName="tmp_dataRowDeleting" msprop:Generator_TablePropName="tmp_data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="sensor" msprop:Generator_UserColumnName="sensor" msprop:Generator_ColumnVarNameInTable="columnsensor" msprop:Generator_ColumnPropNameInRow="sensor" msprop:Generator_ColumnPropNameInTable="sensorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="result" msprop:Generator_UserColumnName="result" msprop:Generator_ColumnVarNameInTable="columnresult" msprop:Generator_ColumnPropNameInRow="result" msprop:Generator_ColumnPropNameInTable="resultColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="color" msprop:Generator_UserColumnName="color" msprop:Generator_ColumnPropNameInRow="color" msprop:Generator_ColumnVarNameInTable="columncolor" msprop:Generator_ColumnPropNameInTable="colorColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="sensorsKey1">
+      <xs:selector xpath=".//mstns:sensors" />
+      <xs:field xpath="mstns:pin" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
