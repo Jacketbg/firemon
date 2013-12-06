@@ -1,4 +1,4 @@
-firemon
+Firemon
 =======
 
 Firemon - Monitoring environment with PicoIP
